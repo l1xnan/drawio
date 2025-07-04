@@ -1,0 +1,114 @@
+/* ---------- 设置正文字体 ---------- */
+/* *:not(pre) {
+  font-family: "仓耳明黑" !important;
+} */
+
+/* ---------- 修改滚动条样式 ---------- */
+*::-webkit-scrollbar {
+  width: 9px;
+  height: 12px;
+  background-color: #f7f8fa;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  min-height: 12px;
+  background-color: #8b8b8b;
+}
+
+*::-webkit-scrollbar-corner {
+  background-color: #f7f8fa;
+}
+
+/* 修改文本两侧边距 */
+.readerChapterContent {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* ---------- 亮主题设置 ---------- */
+
+/* 修改亮色主题背景颜色及阴影 */
+.wr_whiteTheme .app_content {
+  box-shadow: 0 8px 32px rgba(0, 25, 104, 0.1) !important ;
+}
+.wr_whiteTheme .app_content.shelf_container {
+  box-shadow: none !important;
+}
+html body.wr_whiteTheme,
+.wr_whiteTheme .navBar,
+.wr_whiteTheme .navBar_home,
+.wr_whiteTheme .bookshelf_preview_item,
+.wr_whiteTheme .app_content,
+.wr_whiteTheme .readerControls_item,
+.wr_whiteTheme .readerControls_fontSize,
+.wr_whiteTheme .readerTopBar,
+.wr_whiteTheme .readerBottomBar,
+.wr_whiteTheme .readerBottomSettingPanel,
+.wr_whiteTheme .recommend_preview_item,
+/* 双栏阅读 */
+.wr_whiteTheme .wr_horizontalReader .wr_horizontalReader_app_content,
+.wr_whiteTheme .wr_horizontalReader .readerChapterContent_container,
+.wr_whiteTheme .wr_horizontalReader .readerChapterContent {
+  background-color: #f9f3e8 !important;
+}
+
+.wr_whiteTheme .readerFooter_button {
+  background-color: #efebe3 !important;
+}
+
+.readerTopBar {
+  height: 48px !important;
+}
+.navBarOffset {
+  padding-top: 56px !important;
+}
+
+/* 隐藏元素 */
+.readerMemberCardTips,
+.readerControls_item.download ,/* 下载App按钮 */
+.readerControls_item.wetype /* 微信输入法 */,
+.readerTopBar_addToShelf_wrapper /* 去书架查看 */ {
+  display: none !important;
+}
+
+/* 隐藏底部 hover 显示 */
+.readerBottomBar {
+  display: none !important;
+}
+
+pre,
+pre * {
+  font-family: Consolas !important;
+}
+
+/* ---------- 控制按钮 ---------- */
+
+.readerControls_fontSize:not(:first-child),
+.readerControls_item:not(:first-child) {
+  margin-top: 12px;
+}
+
+/* 字体控制默认透明显示 */
+.readerControls_item,
+.readerControls_fontSize {
+  opacity: 0.5 !important;
+}
+.readerControls_item:hover,
+.readerControls_fontSize:hover {
+  opacity: 1 !important;
+}
+
+.readerControls_item.extra-item svg.icon {
+  height: 18px;
+  width: 18px;
+}
+
+/* 隐藏 墨水屏链接 按钮 */
+.navBar_link_ink,
+.navBar_link_ink + .navBar_separator,
+/* 隐藏 下载手机 按钮 */
+.navBar_link_Phone,
+.navBar_link_Phone + .navBar_separator {
+  display: none !important;
+}
